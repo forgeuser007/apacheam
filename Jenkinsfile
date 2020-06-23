@@ -3,7 +3,7 @@ node {
   git url: 'https://github.com/forgeuser007/apacheam.git'
 
   stage 'build'
-  docker.build('apacheam:v2')
+  docker.build('apacheam:v1')
 
   stage 'deploy'
   sh './deploy.sh'
