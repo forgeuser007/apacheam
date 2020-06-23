@@ -2,8 +2,8 @@ version: '2'
 
 services:
   webserver:
-    container_name: webserver
-    image: 'apacheam:v1'
+    build: .
+#   image: 'apacheam:v1'
     ports:
       - '80:80'
       - '443:443'
